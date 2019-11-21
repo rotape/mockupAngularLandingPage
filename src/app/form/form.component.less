@@ -1,8 +1,14 @@
+@import '../../variables.less'; 
 .sectionGrid {
     &_wrap {
         display: grid;
         grid-template-columns: 1.5fr 3fr 1fr 2fr 1.5fr;   
         grid-template-rows: 1fr 3fr 1fr;
+        @media(max-width: @media_mobile) {
+            grid-template-columns: 1fr ;
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &_Title {
@@ -10,6 +16,14 @@
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
+        font-size: 2rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        align-self: center;
+        @media(max-width: @media_mobile) {
+            grid-column-start: 1;
+            padding: 2rem;
+        }
     }
 
     &_form {
@@ -25,6 +39,9 @@
         p {
             text-align: center;
         }
+        @media(max-width: @media_mobile) {
+            grid-column-start: 1;
+        }
     }
 
     &_button {
@@ -34,6 +51,8 @@
         border:0px;
         background-color: #ED5000 ;
         width: 10rem;
+        font-weight: bold;
+        text-transform: capitalize;
     }
 
     &_input {
