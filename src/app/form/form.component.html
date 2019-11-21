@@ -1,13 +1,16 @@
-<h2>Your Exclusive SonicWall Growth Incentive Program</h2>
-<form #landingForm="ngForm">
-  <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong></p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, debitis. Aperiam eum porro ut facere consequuntur.
-  </p>
-  <label for="fullName">Full Name</label>
-  <input type="text" name="fullName" id="fullName" class="frm__input" placeholder="Full Name"
-    [(ngModel)]="model.fullName" required />
-    <input type="email" name="email" id="email" class="frm__input" placeholder="Email Address"
-    [(ngModel)]="model.email" required />
-    <input type="text" name="company" id="company" class="frm__input" placeholder="Company"
-    [(ngModel)]="model.company" required />
-</form>
+<div class="sectionGrid_wrap">
+  
+  <h2 class="sectionGrid_Title">Your Exclusive SonicWall Growth Incentive Program</h2>
+  <form class="sectionGrid_form" #landingForm="ngForm">
+    <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, debitis. Aperiam eum porro ut facere consequuntur.
+    </p>
+    <input class="sectionGrid_input" type="text" name="fullName" id="fullName"  placeholder="Full Name"
+      [(ngModel)]="model.fullName" required />
+      <input class="sectionGrid_input" type="email" name="email" id="email"  placeholder="Email Address"
+      [(ngModel)]="model.email" required />
+      <input class="sectionGrid_input" type="text" name="company" id="company"  placeholder="Company"
+      [(ngModel)]="model.company" required />
+      <input class="sectionGrid_button" type="button" value="submit">
+  </form>
+</div>
