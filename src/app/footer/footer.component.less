@@ -1,0 +1,22 @@
+.footer{
+    color: #ffffff;
+    background-color: #343338;
+    display: grid;
+    grid-template-rows: 5rem 5rem;
+    align-items: center;
+    &_border {
+        border: 1px solid #ffffff;
+        margin: 0.5rem;
+        grid-row-start: 1;
+        grid-row-end: -1;
+    }
+    &_up{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    &_down{
+        grid-row-start: 2;
+        grid-row-end: -1;
+
+    }
+}
