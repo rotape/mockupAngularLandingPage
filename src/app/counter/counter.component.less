@@ -39,4 +39,31 @@
         grid-row-start: 2;
         border-top: 0.5px solid #cccccc;
     }
+    &_count{
+        grid-column-start: 2;
+        grid-column-end: -1;
+        grid-row-start: 3;
+        grid-row-end: -1;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    &_number {
+        border: 1px solid #f2f2f2;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 2rem ;
+        height: 2rem;
+        background-color: #ffffff;
+        &-text{
+            font-size: 0.5em;
+            text-transform: uppercase;
+        }
+        &-blue{
+            color: #3991e5;
+        }
+    }
 }
