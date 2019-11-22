@@ -17,6 +17,8 @@
     hr{
         grid-row-start: 2;
         grid-row-end: 3;
+        width: 20rem;
+        border-color: #4e4e4e;
     }
     &_up{
         padding: 1rem;
@@ -29,7 +31,27 @@
         grid-row-end: -1;
 
     }
-    a {
+    &_link {
         color: #ffffff;
+        &-store{
+            text-transform: capitalize;
+            color:#C88646;
+            text-decoration: underline;
+        }
+    }
+}
+
+.legal {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 2rem;
+    color: #C8BFB9;
+    font-size: 0.7rem;
+    p {
+        padding: 0.5rem;
+        a{
+            text-decoration: underline;
+        }
     }
 }

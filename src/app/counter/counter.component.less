@@ -16,6 +16,7 @@
             width: 100%;
             align-items: center;
             padding-bottom: 322px;
+            background-color: #17B9E0;
             background-position-x: -225px;
             background-position-y: bottom;
         }
@@ -33,11 +34,14 @@
     hr {
         margin: 0;
         padding: 0;
-        width: 100%;
-        grid-column-start: 1;
+        width: 1.5rem;
+        grid-column-start: 2;
         grid-column-end: -1;
         grid-row-start: 2;
-        border-top: 0.5px solid #cccccc;
+        border-top: 2.5px solid #ffffff;
+        @media(max-width: @media_mobile) {
+            display: none;
+        }
     }
     &_count{
         grid-column-start: 2;
@@ -45,7 +49,6 @@
         grid-row-start: 3;
         grid-row-end: -1;
         display: flex;
-        justify-content: space-around;
         flex-direction: row;
     }
     &_number {
@@ -55,6 +58,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        margin-right: 0.7rem;
         width: 2rem ;
         height: 2rem;
         background-color: #ffffff;
