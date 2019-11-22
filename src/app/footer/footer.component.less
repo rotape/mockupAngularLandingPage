@@ -1,22 +1,35 @@
+.wrapper {
+    padding:0.8rem;
+    background-color: #343338;
+}
 .footer{
     color: #ffffff;
     background-color: #343338;
     display: grid;
-    grid-template-rows: 5rem 5rem;
+    grid-template-rows: 5rem 1px 5rem;
     align-items: center;
+    border: 1px solid #ffffff;
     &_border {
-        border: 1px solid #ffffff;
         margin: 0.5rem;
         grid-row-start: 1;
         grid-row-end: -1;
     }
+    hr{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
     &_up{
+        padding: 1rem;
         grid-row-start: 1;
         grid-row-end: 2;
     }
     &_down{
-        grid-row-start: 2;
+        padding: 1rem;
+        grid-row-start: 3;
         grid-row-end: -1;
 
+    }
+    a {
+        color: #ffffff;
     }
 }
