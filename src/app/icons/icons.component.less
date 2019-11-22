@@ -1,8 +1,16 @@
+@import '../../variables.less'; 
 .icons{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 2fr 1fr;
     justify-items: center;
+      @media(max-width: @media_mobile) {
+            display: flex;
+            flex-direction: column;
+        }
+        &-blue{
+            color:#2CBAED;
+        }
     &_text{
         grid-column-start: 2;
         grid-column-end: 3;
@@ -10,9 +18,7 @@
         align-content: center;
         flex-direction: column;
         text-align: center;
-        &-blue{
-            color:#2CBAED;
-        }
+        justify-content: space-around;
     }
     &_boxes{
         grid-column-start: 2;
@@ -22,20 +28,30 @@
         column-gap: 1.5rem;
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: stretch;
+        margin-top: 1.5rem;
+        @media(max-width: @media_mobile) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
     }
     &_box {
+        width: 12rem;
         border: 1px solid #2CBAED;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 1.5em;
         justify-content: space-evenly;
-         p{
-            width: 9rem;
-            padding: 1rem;
-            text-align: center;
+        p:first-of-type{
+            font-size: 2rem;
         }
-        
+         p{
+            width: 10rem;
+            padding: 0.6rem;
+            text-transform: capitalize;
+        }
     }
  
 }
